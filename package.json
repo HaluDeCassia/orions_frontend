@@ -1,0 +1,45 @@
+{
+  "name": "orions_frontend",
+  "version": "1.0.0",
+  "description": "> [![Logo Orions](http://www.orions.com.br/img/logo_orions_sites3.png)](https://www.orions.com.br) > > Qualquer pessoa pode realizar o teste que daremos um feedback.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaluDeCassia/orions_frontend.git"
+  },
+  "keywords": [
+    "challange",
+    "orions",
+    "frontend"
+  ],
+  "author": "Halú de Cássia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HaluDeCassia/orions_frontend/issues"
+  },
+  "homepage": "https://github.com/HaluDeCassia/orions_frontend#readme",
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-react": "^6.24.1",
+    "bootstrap": "^4.0.0-alpha.6",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1",
+    "react-transition-group": "^1.1.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-react": "^6.24.1",
+    "bootstrap": "^4.0.0-alpha.6",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1",
+    "react-transition-group": "^1.1.3",
+    "webpack": "^2.6.1"
+  }
+}
