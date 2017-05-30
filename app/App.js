@@ -1,11 +1,11 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 
-let Navbar = require('./components/NavBar');
+let NavBar = require('./components/NavBar');
 let App = React.createClass({
     render: function () {
         return (
-            < Navbar />
+            < NavBar />
         );
     }
 });
