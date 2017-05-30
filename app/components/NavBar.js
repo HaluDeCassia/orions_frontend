@@ -15,13 +15,13 @@ let NavBar = React.createClass({
         let i = 0;
         let navLinks = pages.map(function(page){
             return (
-                <NavItem eventKey={i++} href={'/' + page}>{page}</NavItem>
+                <NavItem eventKey={i++} onSelect={this.handleSelect} href={'/' + page}>{page}</NavItem>
             );
         });
 
         return (
             <div>
-                <link rel="stylesheet" href={"../css/navbar.css"}/>
+                <link rel="stylesheet" href={"../css/_navbar.scss"}/>
                 <Navbar collapseOnSelect>
                     <Navbar.Header>
                         <Navbar.Brand>
