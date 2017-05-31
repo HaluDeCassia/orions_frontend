@@ -1,1 +1,34 @@
-@font-face{font-family: 'Lato'; src: url(../arquivos/fonts/Lato-Regular.ttf) format('truetype'); font-weight: normal; font-style: normal;}.navbar-brand{float: none;}.navbar-default {background-color: #111111; border: none; border-radius: inherit;}.navbar-nav { margin: 7% !important;}.navbar-default .navbar-nav>li>a {color: #fcba00; font: 18px Lato; text-transform: uppercase; letter-spacing:3px;}.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:active {color: #FFF; }
+@font-face {
+  font-family: 'Lato';
+  src: url(../arquivos/fonts/Lato-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.bg-footer {
+  background-color: #111111;
+}
+.tt-footer{
+  color: #727272;
+  font: 14px Lato;
+  text-align: center;
+}
+.a-footer{
+  color: #FCBA00;
+  font-size: 32px;
+  text-align: right;
+  &:focus {
+    color: #FFC822;
+  }
+  &:hover {
+    color: #FFC822;
+  }
+  &:active {
+    color: #FFC822;
+  }
+}
+.jumbotron {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
