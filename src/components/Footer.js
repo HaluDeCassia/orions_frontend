@@ -9,16 +9,23 @@ let Footer = React.createClass({
             title: "Logo Orions",
             src: "../arquivos/img/logo_orions_rodape.png"
         };
+        let today = new Date(), year = today.getFullYear();
 
         return (
-            <footer>
-                <Row className="bg-footer">
-                    <link rel="stylesheet" href={"../css/_footer.scss"}/>
-                    <Col className="jumbotron">
-                        <Image src={logo.src} alt={logo.title} responsive/>
-                        <p className="tt-footer">2017</p>
+            <footer className="bg-footer">
+                <Row>
+                    <Col xs={12}>
+                        <link rel="stylesheet" href={"../css/_footer.scss"}/>
+                        <Col xs={2} xsPush={5}>
+                            <Image src={logo.src} alt={logo.title} responsive/>
+                        </Col>
                         <Row>
-                            <Col xs={6} pullRight>
+                            <Col xs={12}>
+                                <p className="tt-footer">&copy; { year } </p>
+                            </Col>
+                        </Row>
+                        <Col xs={12}>
+                            <Col xs={6} className="facebook">
                                 <a className="a-footer" href="">
                                     <i className="fa fa-facebook-square" aria-hidden="true">
                                     </i>
@@ -30,7 +37,7 @@ let Footer = React.createClass({
                                     </i>
                                 </a>
                             </Col>
-                        </Row>
+                        </Col>
                     </Col>
                 </Row>
             </footer>

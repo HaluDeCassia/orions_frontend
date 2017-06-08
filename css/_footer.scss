@@ -4,6 +4,10 @@
   font-weight: normal;
   font-style: normal;
 }
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
 .bg-footer {
   background-color: #111111;
 }
@@ -11,6 +15,7 @@
   color: #727272;
   font: 14px Lato;
   text-align: center;
+  margin: 1.5em auto auto;
 }
 .a-footer{
   color: #FCBA00;
@@ -25,6 +30,9 @@
   &:active {
     color: #FFC822;
   }
+}
+.facebook{
+  text-align: right;
 }
 .jumbotron {
   position: absolute;

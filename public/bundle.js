@@ -11916,29 +11916,45 @@ let Footer = React.createClass({
             title: "Logo Orions",
             src: "../arquivos/img/logo_orions_rodape.png"
         };
+        let today = new Date(),
+            year = today.getFullYear();
 
         return React.createElement(
             'footer',
-            null,
+            { className: 'bg-footer' },
             React.createElement(
                 Row,
-                { className: 'bg-footer' },
-                React.createElement('link', { rel: 'stylesheet', href: "../css/_footer.scss" }),
+                null,
                 React.createElement(
                     Col,
-                    { className: 'jumbotron' },
-                    React.createElement(Image, { src: logo.src, alt: logo.title, responsive: true }),
+                    { xs: 12 },
+                    React.createElement('link', { rel: 'stylesheet', href: "../css/_footer.scss" }),
                     React.createElement(
-                        'p',
-                        { className: 'tt-footer' },
-                        '2017'
+                        Col,
+                        { xs: 2, xsPush: 5 },
+                        React.createElement(Image, { src: logo.src, alt: logo.title, responsive: true })
                     ),
                     React.createElement(
                         Row,
                         null,
                         React.createElement(
                             Col,
-                            { xs: 6, pullRight: true },
+                            { xs: 12 },
+                            React.createElement(
+                                'p',
+                                { className: 'tt-footer' },
+                                '\xA9 ',
+                                year,
+                                ' '
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        Col,
+                        { xs: 12 },
+                        React.createElement(
+                            Col,
+                            { xs: 6, className: 'facebook' },
                             React.createElement(
                                 'a',
                                 { className: 'a-footer', href: '' },
