@@ -4,6 +4,9 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+    font-family: 'Myriad'; src: url(../arquivos/fonts/MyriadPro-Regular.otf) format('opentype'); font-weight: normal; font-style: normal;
+}
 .row {
   margin-right: 0;
   margin-left: 0;
@@ -17,20 +20,21 @@
   text-align: center;
   margin: 1.5em auto auto;
 }
-.a-footer{
+.a-footer {
   color: #FCBA00;
   font-size: 32px;
   text-align: right;
-  &:focus {
-    color: #FFC822;
-  }
-  &:hover {
-    color: #FFC822;
-  }
-  &:active {
-    color: #FFC822;
-  }
 }
+.a-footer:focus {
+  color: #FFC822;
+}
+.a-footer:hover {
+  color: #FFC822;
+}
+.a-footer:active {
+  color: #FFC822;
+}
+
 .facebook{
   text-align: right;
 }

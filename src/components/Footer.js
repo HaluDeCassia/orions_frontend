@@ -15,7 +15,7 @@ let Footer = React.createClass({
             <footer className="bg-footer">
                 <Row>
                     <Col xs={12}>
-                        <link rel="stylesheet" href={"../css/_footer.scss"}/>
+                        <link rel="stylesheet" href={"../css/footer.css"}/>
                         <Col xs={2} xsPush={5}>
                             <Image src={logo.src} alt={logo.title} responsive/>
                         </Col>

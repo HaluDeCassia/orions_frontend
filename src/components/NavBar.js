@@ -11,7 +11,7 @@ let NavBar = React.createClass({
             title: "Logo Orions",
             src: "../arquivos/img/logo_orions.png"
         };
-        let pages = ['Home', 'Quem Somos'];
+        let pages = ['Parallax', 'Quem Somos'];
         let i = 0;
         let navLinks = pages.map(function(page){
             return (
@@ -21,7 +21,7 @@ let NavBar = React.createClass({
 
         return (
             <div>
-                <link rel="stylesheet" href={"../css/_navbar.scss"}/>
+                <link rel="stylesheet" href={"../css/navbar.css"}/>
                 <Navbar collapseOnSelect>
                     <Navbar.Header>
                         <Navbar.Brand>
